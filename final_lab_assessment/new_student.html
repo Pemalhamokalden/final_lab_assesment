@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Student</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <a href="home.html">Back to Home Page</a>
+        <div id="formMain">
+            <!-- display the form on clicking the button -->
+            <button id="addStudentButton">Add a new student</button>
+
+            <div id="newStudentFormContainer">
+                <form action="" id="newStudentForm" onsubmit="validateForm()">
+                    <label for="Name">Name:</label><br>
+                    <input type="text" name="Name" id="Name"><br><br>
+                    <label for="Student ID">Student ID:</label><br>
+                    <input type="number" name="Student ID" id="Student ID"><br><br>
+                    <label for="Age">Age:</label><br>
+                    <input type="number" name="Age" id="Age"><br><br>
+                    <label for="email">email:</label><br>
+                    <input type="text" name="email" id="email"><br>
+
+                    <h3>Choose your gender:</h3>
+                    <input type="radio" name="Female" id="Female">
+                    <label for="Female">Female</label>
+                    <input type="radio" name="Male" id="Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" name="others" id="others">
+                    <label for="others">others</label><br><br>
+
+                     
+                    <label for="program">Choose a program</label>
+                    <select name="program" id="program">
+                        <option value="DCSN">DCSN</option>
+                        <option value="DMA">DMA</option>
+                    </select>
+                        
+
+                    <h3>Choose at least one hobby</h3>
+                    <input type="checkbox" name="Dancing" id="Dancing">
+                    <label for="Dancing">Dancing</label>
+                    <input type="checkbox" name="Sleeping" id="Sleeping">
+                    <label for="Sleeping">Sleeping</label>
+                    <input type="checkbox" name="Music" id="Music">
+                    <label for="Music">Music</label>
+                    <input type="checkbox" name="Nothing" id="Nothing">
+                    <label for="Nothing">Nothing</label><br><br>
+
+                    <input type="Submit" value="Submit">
+                    <input type="reset" value="reset">
+                </form>
+            </div>
+        </div>
+        <script src="/script.js"></script>
+    </body>
+</html>
+
+
+        
